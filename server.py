@@ -154,14 +154,14 @@ def veri() -> pd.DataFrame:
 
 
 def _json_deger(v):
-    if v is None:
-        return None
-    if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
+    if v is None or pd.isna(v):
         return None
     if hasattr(v, "item"):  # numpy skalerleri
         v = v.item()
-        if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
+        if v is None or pd.isna(v):
             return None
+    if isinstance(v, float) and (math.isnan(v) or math.isinf(v)):
+        return None
     return v
 
 
