@@ -1,0 +1,7 @@
+# Web sürümü (server.py + static/)
+flask>=3.0
+pandas>=2.0
+
+# Streamlit sürümü (app.py)
+streamlit>=1.30
+plotly>=5.0
