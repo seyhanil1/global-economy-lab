@@ -487,7 +487,7 @@
     dom.tools.replaceChildren(dl);
 
     drawTable();
-    dom.foot.innerHTML = "Kaynak: <code>app.py</code> sekme 24 ile aynı sütunlar.";
+    dom.foot.innerHTML = "Seçilen ülkelerin temel makroekonomik ve alım gücü göstergeleri.";
   }
 
   function drawTable() {
